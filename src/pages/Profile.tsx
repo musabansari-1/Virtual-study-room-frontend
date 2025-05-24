@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Container, Paper, Button, Box } from '@mui/material';
-import axios from 'axios';
+import axios from '../axiosInstance';
 import { UserProfile } from '../types';
 
 const Profile: React.FC = () => {

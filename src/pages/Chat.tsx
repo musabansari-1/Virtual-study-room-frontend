@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { TextField, Button, Typography, Container, List, ListItem, ListItemText, Box, IconButton } from '@mui/material';
 import MicOffIcon from '@mui/icons-material/MicOff';
 import VideocamOffIcon from '@mui/icons-material/VideocamOff';
-import axios from 'axios';
+import axios from '../axiosInstance';
 
 interface Message {
   id: number;

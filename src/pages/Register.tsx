@@ -8,7 +8,7 @@ import {
   Stack,
   Box
 } from '@mui/material';
-import axios from 'axios';
+import axios from '../axiosInstance';
 import { UserCreate, UserOut } from '../types';
 
 const Register: React.FC = () => {

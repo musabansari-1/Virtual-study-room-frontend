@@ -8,7 +8,7 @@ import {
   Paper,
   Stack
 } from '@mui/material';
-import axios from 'axios';
+import axios from '../axiosInstance';
 import { Token } from '../types';
 
 const Login: React.FC = () => {

@@ -13,7 +13,7 @@ import {
   Stack,
   Box,
 } from '@mui/material';
-import axios from 'axios';
+import axios from '../axiosInstance';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { StudyRoomCreate, StudyRoomOut } from '../types';
 
