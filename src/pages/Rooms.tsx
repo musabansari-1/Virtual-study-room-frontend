@@ -4,7 +4,6 @@ import {
   TextField,
   Button,
   Typography,
-  Container,
   List,
   ListItem,
   ListItemText,
@@ -55,7 +54,10 @@ const Rooms: React.FC = () => {
         return;
       }
       const room: StudyRoomCreate = { name, subject };
-      const response = await axios.post<StudyRoomOut>('/api/study-rooms/', room, {
+      // const response = await axios.post<StudyRoomOut>('/api/study-rooms/', room, {
+      //   headers: { Authorization: `Bearer ${token}` },
+      // });
+      await axios.post<StudyRoomOut>('/api/study-rooms/', room, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setName('');
